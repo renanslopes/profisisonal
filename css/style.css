@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Roboto:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:0;
+    font-family: 'Ubuntu',sans-serif,'Dongle', 'Roboto';
+    --destaque_01:#27F2F2;
+    --destaque_02:#D9A6F9;
+    --primaria: #08298C;
+    --secundaria:#0B38BF;
+    --terciaria:#041340;
+    --fonte_01:#CCE5E9;
+    --fonte_02:#C3C3C3;
+    --transparencia_01:#92a5a480;
+    --transparencia_02:rgba(0, 0, 0, 0);
+    font-size: 100%;
+    color:var(--fonte_01);
+    letter-spacing: 0.1rem;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primaria);
+    background-image: url("../img/bg_geral.jpg");
+    background-position: center center;
+    background-size: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+/* ===========================INÍCIO SEÇÃO HEADER================================ */
+
+header{
+    width: 90vw;
+    height: 70px;
+    display:flex;
+    flex-direction: row;
+    /* background: brown; */
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+._h_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+._h_logo h1{
+    -webkit-text-stroke: 1px var(--destaque_01);
+    text-stroke: 1px var(--destaque_01);
+    color:#000;
+    font-size: 2rem;
+}
+._h_logo span{
+    font-size: 0.8rem;
+    color: var(--destaque_01);
+    margin-top:.4rem;
+}
+
+
+._h_menu_principal{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+._h_menu_ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+._h_menu_li{
+    width: 30%;
+    list-style: none;
+    text-align: center;
+    /* padding: 10px; */
+}
+
+._h_menu_li a{
+    /* padding: 5px; */
+    text-decoration: none;
+    color:var(--fonte_02);
+    font-family: 'Dongle';
+    font-size: 2rem;
+    transition: 0.5s;
+}
+._h_menu_li a:hover{
+    color: var(--destaque_01);
+    transition: 0.5s;
+    font-size: 2.2rem;
+}
+
+._h_social_ul{
+    display: flex;
+    flex-direction: row;
+}
+
+._h_social_li{
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+._h_social_li a{
+    padding: 5px;
+    text-decoration: none;
+}
+
+._h_social_li img{
+    width: 100%;
+}
+
+
+/* ===========================FIM SEÇÃO HEADER================================ */
+
+main{
+    width:90vw;
+    /* height: 100vh; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+/* ===========================INÍCIO SEÇÃO HOME================================ */
+._home_content_{
+    width: 90vw;
+    height: 100vh;
+    /* background: #c3c3c3; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+
+}
+._home_content_ h2{
+    width: 40vw;
+    color: var(--destaque_01);
+    font-size: 2.2rem;
+
+}
+._home_content_ h3{
+    width: 40vw;
+    color: var(--fonte_02);
+    font-size: 1.8rem;
+    margin-top: 3rem;
+
+}
+._btn_about{
+    margin-top: 5rem;
+}
+._btn_about span{
+    font-size: 1.3rem;
+    color: var(--destaque_02);
+    border: 1px solid var(--destaque_02);
+    margin-top: 3rem;
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+._btn_about span:hover{
+    color: var(--secundaria);
+    background-color: var(--destaque_02);
+    border-radius: 0.8rem;
+    transition: 0.5s;
+}
+
+
+
+/* ===========================FIM SEÇÃO HOME================================ */
+
+._about_content_{
+    width: 100%;
+    height: 100%;
+    background: #8b8989;
+}
+
+._projects_content_{
+    width: 100%;
+    height: 100%;
+    background: #694d4d;
+}
