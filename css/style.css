@@ -14,7 +14,7 @@
     --fonte_01:#CCE5E9;
     --fonte_02:#C3C3C3;
     --transparencia_01:#92a5a480;
-    --transparencia_02:rgba(0, 0, 0, 0);
+    --transparencia_02:rgba(255, 255, 255, 0.158);
     font-size: 100%;
     color:var(--fonte_01);
     letter-spacing: 0.1rem;
@@ -22,6 +22,7 @@
 
 html{
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -29,7 +30,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background: var(--primaria);
+    background: #000;
     background-image: url("../img/bg_geral.jpg");
     background-position: center center;
     background-size: 100vw;
@@ -41,14 +42,22 @@ body{
 /* ===========================INÍCIO SEÇÃO HEADER================================ */
 
 header{
-    width: 90vw;
-    height: 70px;
+    width: 100%;
+    height: 80px;
     display:flex;
-    flex-direction: row;
-    /* background: brown; */
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
+    background-color: var(--transparencia_02);
     z-index: 10;
+    border-bottom: var(--destaque_02) 0.5px solid;
+    box-shadow: var(--destaque_02) 0px 5px 40px
+}
+._h_content{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 ._h_logo{
     display: flex;
@@ -65,7 +74,7 @@ header{
 ._h_logo span{
     font-size: 0.8rem;
     color: var(--destaque_01);
-    margin-top:.4rem;
+    margin-top:.3rem;
 }
 
 
@@ -86,47 +95,133 @@ header{
 
 ._h_menu_li{
     width: 30%;
-    list-style: none;
     text-align: center;
-    /* padding: 10px; */
 }
 
 ._h_menu_li a{
-    /* padding: 5px; */
     text-decoration: none;
-    color:var(--fonte_02);
+    color:var(--fonte_01);
     font-family: 'Dongle';
-    font-size: 2rem;
-    transition: 0.5s;
+    font-size: 2.2rem;
+    transition: 0.1s;
 }
 ._h_menu_li a:hover{
     color: var(--destaque_01);
-    transition: 0.5s;
-    font-size: 2.2rem;
+    transition: 0.1s;
+    font-size: 2.1rem;
+}
+
+._h_language{
+    width:7vw;
+    display: flex;
+    /* align-items: center; */
+}
+._h_language_ul{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    align-items: center;
+    justify-content: space-around;
+}
+._h_language_li{
+    width: 40%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border:1px solid var(--fonte_02);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    
+}
+._h_language_li p{
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: 0.2s;
+    text-align: center;
+    padding: 0.4rem;
+    transition: 0.2s;
+}
+#_h_language_pt p{
+    background-color: var(--destaque_02);
+    color: var(--secundaria);
+}
+
+._h_language_li p:hover{
+    background-color: var(--destaque_02);
+    color: var(--secundaria);
+    transition: 0.2s;
+}
+._h_language_notification{
+    width: 200px;
+    position: absolute;
+    display: none;
+    margin-top: 10rem;
+    background-color: var(--transparencia_02);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+
+._h_social{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 ._h_social_ul{
+    width:80%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    /* justify-content: flex-end; */
 }
 
 ._h_social_li{
-    padding: 10px;
-    list-style: none;
-    text-decoration: none;
+    height: 70%;
+    width: 50%;
+    padding: 5px;
 }
 
 ._h_social_li a{
-    padding: 5px;
+    width: 100%;
+    margin:0 auto 0 auto;
     text-decoration: none;
 }
 
+
 ._h_social_li img{
-    width: 100%;
+    width: 80%;
+    margin:0 auto 0 auto;
+}
+
+._h_social_li object{
+    width: 80%;
+    margin:0 auto 0 auto;
+    color: var(--destaque_01);
+    stroke: var(--destaque_01);
+    fill: var(--destaque_01);
+}
+
+._h_social_li_w{
+    background-image: url(/img/icons_social/whatsapp.svg);
+    background-size: contain;
+    cursor: pointer;
+}
+
+._h_social_li img:hover{
+    color:var(--destaque_01);
+    stroke:var(--destaque_01);
+    fill:var(--destaque_01);
 }
 
 
-/* ===========================FIM SEÇÃO HEADER================================ */
+/* ===========================FIM SEÇÃO HEADER====INÍCIO ESTILOS GENERALISTAS============================ */
 
 main{
     width:90vw;
@@ -135,23 +230,52 @@ main{
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
+    scroll-margin-top:7rem;
 }
-/* ===========================INÍCIO SEÇÃO HOME================================ */
-._home_content_{
-    width: 90vw;
+
+._h2_title_pages{
+    width: 40vw;
+    color: var(--destaque_02);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+._content_layout_basic{
+    width: 80vw;
     height: 100vh;
-    /* background: #c3c3c3; */
     display: flex;
     flex-direction: column;
     margin-top: 8rem;
-
+    scroll-margin-top:10rem;
 }
-._home_content_ h2{
+
+._li_style{
+    list-style: none;
+}
+
+/* ======================FIM ESTILOS GENERALISTAS=====INÍCIO SEÇÃO HOME================================ */
+
+._home_content_{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+._home_content_divs{
+    width:50%
+}
+
+._home_h2_title{
     width: 40vw;
     color: var(--destaque_01);
     font-size: 2.2rem;
-
+    
 }
+
+._home_content_right img{
+    width: 50%;
+}
+
 ._home_content_ h3{
     width: 40vw;
     color: var(--fonte_02);
@@ -162,7 +286,7 @@ main{
 ._btn_about{
     margin-top: 5rem;
 }
-._btn_about span{
+._btn_about a{
     font-size: 1.3rem;
     color: var(--destaque_02);
     border: 1px solid var(--destaque_02);
@@ -171,8 +295,9 @@ main{
     border-radius: 0.5rem;
     cursor: pointer;
     transition: 0.5s;
+    text-decoration: none;
 }
-._btn_about span:hover{
+._btn_about a:hover{
     color: var(--secundaria);
     background-color: var(--destaque_02);
     border-radius: 0.8rem;
@@ -180,17 +305,193 @@ main{
 }
 
 
+/* ===========================FIM SEÇÃO HOME====ÍNICIO DA SEÇÃO ABOUT=========================== */
 
-/* ===========================FIM SEÇÃO HOME================================ */
 
 ._about_content_{
-    width: 100%;
-    height: 100%;
-    background: #8b8989;
+    display: flex;
+    flex-direction: row;
+}
+._about_content_ p{
+    width: 70%;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: var(--fonte_02);
+}
+._about_content_ a{
+    font-weight: bold;
+    text-decoration: none;
+}
+._about_content_left{
+    width: 50%;
 }
 
+._a_skills{
+    margin-top: 4rem;
+}
+
+._about_content_right{
+    width: 50%;
+}
+
+._a_social{
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+._a_contact{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+}
+
+._a_contact form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+._a_contact form input{
+    margin-top: 1rem;
+    height: 1.8rem;
+    font-size: 1.4rem;
+    background-color: var(--transparencia_02);
+    border:1px solid var(--fonte_02);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+._a_contact form textarea{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    background-color: var(--transparencia_02);
+    border:1px solid var(--fonte_02);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+#a_contact_button{
+    height: 2.2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-color: var(--destaque_02);
+    color: var(--destaque_02);
+    align-items: center;
+    transition: 0.5s;
+}
+#a_contact_button:hover{
+    background-color: var(--destaque_02);
+    color: var(--secundaria);
+    transition: 0.5s;
+}
+
+/* ===========================FIM SEÇÃO ABOUT====ÍNICIO DA SEÇÃO PROJECTS=========================== */
+
 ._projects_content_{
+    height: 38vw;
+}
+
+._projects_content_ img{
+    width: 20%;
+    margin-top: 5rem;
+}
+
+._projects_content_ p{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+/* ===========================FIM SEÇÃO PROJECTS====ÍNICIO DA SEÇÃO FOOTER=========================== */
+
+
+footer{
+    width:100%;
+    height: 80px;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--transparencia_02);
+}
+._footer_funcional{
+    width: 80vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h1{
+    font-size: 1.8rem;
+    color: black;
+    
+}
+._footer_span{
+    font-size: 0.7rem;
+    color: black;
+    font-weight: bold;
+    
+}
+footer a{
+    width: 20vw;
+    display: block;
+    margin:0 auto;
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+._footer_a{
+    font-size: 1rem;
+}
+
+._footer_logo{
+    width:8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+._f_footer_menu{
+    width: 20vw;
+}
+._f_footer_ul{
     width: 100%;
-    height: 100%;
-    background: #694d4d;
+    display: flex;
+    justify-content: space-between;
+}
+._f_menu_li{
+    list-style: none;
+    width: 30%;
+    text-align: center;;
+}
+._f_menu_li a{
+    width: 100%;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+._f_social{
+    width: 20vw;
+    
+}
+._f_social ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+._f_social_li{
+    width: 10%;
+}
+
+._f_social_li a{
+    width: 100%;
 }

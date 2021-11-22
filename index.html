@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts.js"></script>
+
     <title>Renan Lopes | _dev_javascript</title>
 
-    <!-- FIM FAVICON -->
-    
+    <!-- INÍCIO FAVICON -->
+
     <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
@@ -18,7 +21,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -32,104 +35,198 @@
 
 
 </head>
+
 <body>
 
     <header>
-        <div class="_h_logo">
-            <h1>
-                #Renan_
-            </h1>
-            <span class="_h_h1_span">
-                dev_javascript
-            </span>
-        </div>
+        <div class="_h_content">
+            <div class="_h_logo">
+                <h1>
+                    #Renan_
+                </h1>
+                <span class="_h_h1_span">
+                    dev_javascript
+                </span>
+            </div>
 
-        <nav class="_h_menu_principal">
-            <ul class="_h_menu_ul">
-                <li class="_h_menu_li"><a href="#index">home</a></li>
-                <li class="_h_menu_li"><a href="#sobremim">sobre mim</a></li>
-                <li class="_h_menu_li"><a href="#proojetos">projetos</a></li>
-            </ul>
-        </nav>
+            <nav class="_h_menu_principal">
+                <ul class="_h_menu_ul">
+                    <li class="_h_menu_li _li_style"><a href="#index">home</a></li>
+                    <li class="_h_menu_li _li_style"><a href="#sobremim">sobre mim</a></li>
+                    <li class="_h_menu_li _li_style"><a href="#projetos">projetos</a></li>
+                </ul>
+            </nav>
 
-        <div class="_h_social">
-            <ul class="_h_social_ul">
-                <li class="_h_social_li"><a href="#"><img src="../site/img/icons_social/github.svg" alt="Link para o meu perfil do Github"> </a></li>
-                <li class="_h_social_li"><a href="#"><img src="../site/img/icons_social/whatsapp.svg" alt="Link para falar comigo pelo whatsapp"> </a></li>
-            </ul>
-        </div>
+
+
+            <div class="_h_social">
+                <ul class="_h_social_ul">
+                    <li class="_h_social_li _li_style"><a href="#"><img src="./img/icons_social/github.svg"
+                                alt="Link para o meu perfil do Github"> </a></li>
+                    <li class="_h_social_li _h_social_li_w _li_style"><a href="#"></a></li>
+                    <!-- <li class="_h_social_li"><a href="#"><object type="image/svg+xml"
+                                data="./img/icons_social/whatsapp.svg"></object></a></li> -->
+                    <!-- <li class="_h_social_li"><a href="#"><img src="./img/icons_social/whatsapp.svg"  alt="Link para falar comigo pelo whatsapp"> </a></li> -->
+                </ul>
+            </div>
+
+
+            <div class="_h_language">
+                <ul class="_h_language_ul">
+                    <li id="_h_language_pt" class="_h_language_li _li_style">
+                        <p class="_language_pt_p">PT</p>
+                    </li>
+                    <li id="_h_language_en" class="_h_language_li _li_style">
+                        <p class="_language_en_p">EN</p>
+                    </li>
+                    <span class="_h_language_notification" title="Clique para fechar">
+                        <p>
+                            Em breve tradução para inglês.
+                        </br>
+                            Content translate to english soon.
+                        </p>
+                    </span>
+                </ul>
+            </div>
+
+
+    </div>
+
     </header>
 
 
-    <main>
+    <main id="index">
 
-<!-- ================================================ÍNICIO PÁGINA "HOME" ================================================================================================== -->
+        <!-- ================================================ÍNICIO PÁGINA "HOME" ================================================================================================== -->
 
-        <div class="_home_content_">
-            <h2>
-                Olá!
-                Bem vindo ao meu site portifólio!
-            </h2>
-            <h3>
-                Meu nome é Renan e sou desenvolvedor JavaScript.
-            </h3>
-            <div class="_btn_about">
-                <span>sobre mim</span> 
+        <div class="_home_content_ _content_layout_basic">
+            <div class="_home_content_left _home_content_divs">
+                <h2 class="_home_h2_title">
+                    Olá!
+                    Bem vindo ao meu site portifólio!
+                </h2>
+                <h3>
+                    Meu nome é Renan e sou desenvolvedor JavaScript.
+                </h3>
+                <div class=" _btn_about">
+                    <!-- <span>sobre mim</span> -->
+                    <a href="#sobremim">sobre mim</a>
+                </div>
             </div>
+
+            <div class="_home_content_right _home_content_divs">
+                <img src="img/eu_.png" title="Renan Lopes" alt="Rosto Renan Lopes em vetor">
+                
+            </div>
+
         </div>
 
-<!-- ================================================FIM PÁGINA "HOME" ============= INICIO PÁGINA "SOBRE MIM" ============================================================= -->
+        <!-- ================================================FIM PÁGINA "HOME" ============= INICIO PÁGINA "SOBRE MIM" ============================================================= -->
 
-        <div class="_about_content_">
-            <div class="_a_about_me">
-                <h2>/Sobre mim</h2>
+        <div id="sobremim" class="_about_content_ _content_layout_basic">
+            
+            
+            <div class="_about_content_left">
+                <h2 class="_h2_title_pages">/ Sobre mim</h2>
+                    
+                <p>Meu nome é Renan Lopes, carioca, 35 anos e casado.</p>  
+                <p>Minha vida profissional inteira é ligada diretamente a área de TI.</p>        
+                <p>Recentemente resolvi me desafiar e migrar para uma área na qual sempre “flertei”: desenvolvimento!
+                <p>Hoje me encontro no aprendizado de Javascript front end, com uns pequenos devaneios em back, especificamente NodeJS e Express.</p>
+                <p>Meu aprendizado consta no meu <a href="https://github.com/renanslopes">Github.</a> e mais detalhes sobre minha vida profissional no meu <a href="https://www.linkedin.com/in/renanslopes/">Linkedin.</a></p>
+                <p>Para outras informações é só chamar no <a href="#">whatsapp</a> (21974838314), ou mandar um email: <a href="mailto:renan.lop@hotmail.com">renan.lop@hotmail.com</a>.</p>
+                    
+                
+
+                <div class="_a_skills">
+                    <h2 class="_h2_title_pages">/ Skills</h2>
+                    <div class="_a_skills_icons">
+                        <img src="img/about/html5.svg" alt="Icone HTMl 5">
+                        <img src="img/about/css3.svg" alt="Icone HTMl 5">
+                        <img src="img/about/javascript.svg" alt="Icone HTMl 5">
+                        <p>Em breve...</p>
+                        <img src="img/about/javascript.svg" alt="Icone HTMl 5">
+                        <img src="img/about/javascript.svg" alt="Icone HTMl 5">
+
+                    </div>
+                </div>
+                
             </div>
 
-            <div class="_a_skills">
-                <h2>/Skills</h2>
+            <div class="_about_content_right">
+                <div class="_a_social">
+                    
+                    <h2 class="_h2_title_pages">/ Social</h2>
+                        <div class="_a_social_icons">
+                            <img src="img/about/javascript.svg" alt="Icone HTMl 5">
+                            <img src="img/about/javascript.svg" alt="Icone HTMl 5">
+                            <img src="img/about/javascript.svg" alt="Icone HTMl 5">
+                            <img src="img/about/javascript.svg" alt="Icone HTMl 5">
+                            <img src="img/about/javascript.svg" alt="Icone HTMl 5">
+                            <img src="img/about/javascript.svg" alt="Icone HTMl 5">
+                        </div>
+                </div>
+
+                <div class="_a_contact">
+                    <h2 class="_h2_title_pages">/ Contato</h2>
+                    <form action="" method="post">
+                        <input type="text" value="Nome">
+                        <input type="email" value="Email">
+                        <textarea name="" id="" cols="30" rows="10">Mande sua mensagem</textarea>
+                        <input id="a_contact_button" type="button" value="Enviar">
+                    </form>
+                </div>
             </div>
 
-            <div class="_a_social">
-                <h2>/Social</h2>
-            </div>
-
-            <div class="_a_contact">
-                <h2>/Contato</h2>
-            </div>
-        </div>
+         </div>
 
 
-<!-- ================================================FIM PÁGINA "SOBRE MIM" ============= INICIO PÁGINA "PROJETOS" ========================================================== -->       
+        <!-- ================================================FIM PÁGINA "SOBRE MIM" ============= INICIO PÁGINA "PROJETOS" ========================================================== -->
 
-        <div class="_projects_content_">
-            <h2>/Projetos</h2>
+        <div id="projetos" class="_projects_content_ _content_layout_basic">
+            <h2 class="_h2_title_pages">/Projetos</h2>
+            <p>Conteúdo em construção, novidades em breve...</p>
+            <img src="img/projects/under.png" alt="Imagem de trabalhador demonstrando que a página está em construção">
             <div class="_p_gallery">
-
             </div>
         </div>
 
     </main>
     <footer>
-        <h1>
-            #Renan_
-        </h1>
-        <span class="_f_logo">dev_javascript</span>
+        <div class="_footer_funcional">
+            <div class="_footer_logo">
+            <h1>
+                #Renan_
+            </h1>
+            <span class="_footer_span">
+                dev_javascript
+            </span>
+            </div>
 
-        <div class="_f_footer_menu">
-            <ul class="_f_footer_ul">
-                <li class="_f_menu_li"><a href="#index">home</a></li>
-                <li class="_f_menu_li"><a href="#sobremim">sobre mim</a></li>
-                <li class="_f_menu_li"><a href="#proojetos">projetos</a></li>
-            </ul>
+            <div class="_f_footer_menu">
+                <ul class="_f_footer_ul">
+                    <li class="_f_menu_li"><a href="#index">home</a></li>
+                    <li class="_f_menu_li"><a href="#sobremim">sobre mim</a></li>
+                    <li class="_f_menu_li"><a href="#proojetos">projetos</a></li>
+                </ul>
+            </div>
+
+            <div class="_f_social">
+                <ul class="_f_social_ul">
+                    <li class="_f_social_li _li_style"><a href="#">GIT</a></li>
+                    <li class="_f_social_li _li_style"><a href="#">GIT</a></li>
+                    <li class="_f_social_li _li_style"><a href="#">GIT</a></li>
+                    <li class="_f_social_li _li_style"><a href="#">GIT</a></li>
+                    <li class="_f_social_li _li_style"><a href="#">GIT</a></li>
+                    <li class="_f_social_li _li_style"><a href="#">GIT</a></li>
+                    
+                </ul>
+            </div>
         </div>
 
-        <div class="_f_social">
-            <ul class="_f_social_ul">
-                <li class="_f_social_li"><a href="#">GIT</a></li>
-                <li class="_f_social_li"><a href="#">LINKEDIN</a></li>
-            </ul>
-        </div>
-
+        <a href="#sobremim" class="_footer_a">Desenvolvido por mim mesmo!</a>
+        
     </footer>
 </body>
+
 </html>
