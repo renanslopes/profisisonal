@@ -50,7 +50,6 @@ header{
     background-color: var(--transparencia_02);
     z-index: 10;
     border-bottom: var(--destaque_02) 0.5px solid;
-<<<<<<< HEAD
     box-shadow: var(--destaque_02) 0px 5px 40px;
     animation: header_glow 6s infinite;
 }
@@ -65,26 +64,6 @@ header{
     100%{
         box-shadow: var(--destaque_02) 0px 5px 20px;
     }
-=======
-    box-shadow: var(--destaque_02) 0px 5px 30px;
-    animation:header-glow infinite 6s;
-}
-@keyframes header-glow {
-    0%{
-         box-shadow: var(--destaque_02) 0px 5px 20px;
-        
-    }
-
-    50%{
-        box-shadow: var(--destaque_02) 0px 5px 70px;
-        
-    }
-
-    100%{
-        box-shadow: var(--destaque_02) 0px 5px 20px;
-       
-   }
->>>>>>> 2c42fb35968fe33e9cbffb208a5b86c7eaef0d27
 }
 ._h_content{
     width: 80vw;
@@ -113,11 +92,7 @@ header{
 
 
 ._h_menu_principal{
-<<<<<<< HEAD
     width: 40%;
-=======
-    width: 30%;
->>>>>>> 2c42fb35968fe33e9cbffb208a5b86c7eaef0d27
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,11 +127,7 @@ header{
 ._h_language{
     width:7vw;
     display: flex;
-<<<<<<< HEAD
 
-=======
-    /* align-items: center; */
->>>>>>> 2c42fb35968fe33e9cbffb208a5b86c7eaef0d27
 }
 ._h_language_ul{
     width: 90%;
@@ -278,13 +249,8 @@ main{
 ._h2_title_pages{
     width: 40vw;
     color: var(--destaque_02);
-<<<<<<< HEAD
     font-size: 2rem;
     margin-bottom: 1rem;
-=======
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
->>>>>>> 2c42fb35968fe33e9cbffb208a5b86c7eaef0d27
 }
 ._content_layout_basic{
     width: 80vw;
@@ -292,11 +258,7 @@ main{
     display: flex;
     flex-direction: column;
     margin-top: 8rem;
-<<<<<<< HEAD
     scroll-margin-top:8rem;
-=======
-    scroll-margin-top:10rem;
->>>>>>> 2c42fb35968fe33e9cbffb208a5b86c7eaef0d27
 }
 
 ._li_style{
@@ -364,13 +326,8 @@ main{
     flex-direction: row;
 }
 ._about_content_ p{
-<<<<<<< HEAD
     width: 90%;
     font-size: 1.3rem;
-=======
-    width: 70%;
-    font-size: 1.4rem;
->>>>>>> 2c42fb35968fe33e9cbffb208a5b86c7eaef0d27
     font-weight: normal;
     color: var(--fonte_02);
 }
@@ -383,11 +340,7 @@ main{
 }
 
 ._a_skills{
-<<<<<<< HEAD
     margin-top: 2rem;
-=======
-    margin-top: 4rem;
->>>>>>> 2c42fb35968fe33e9cbffb208a5b86c7eaef0d27
 }
 
 ._about_content_right{
